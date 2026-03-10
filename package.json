@@ -1,13 +1,16 @@
 {
   "name": "taller2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Basic modular OOP frontend for restaurant workflow",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "serve": "npx http-server . -p 5173",
+    "dev": "npm run build && npm run serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module"
 }

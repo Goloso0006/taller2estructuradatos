@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Flow App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Restaurant Service Flow</h1>
+      <p class="subtitle">Modular OOP demo based on the restaurant process diagram.</p>
+
+      <section class="panel" id="actors-panel"></section>
+
+      <section class="panel">
+        <h2>Menu</h2>
+        <div id="menu-items" class="menu-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Actions</h2>
+        <div id="actions" class="actions-grid"></div>
+      </section>
+
+      <section class="panel status-layout">
+        <div>
+          <h2>Current Status</h2>
+          <p id="status-text">No order created.</p>
+          <p id="order-items"></p>
+          <p id="bill-text"></p>
+        </div>
+        <div>
+          <h2>Process Log</h2>
+          <ul id="process-log" class="log-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
